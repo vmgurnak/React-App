@@ -1,0 +1,41 @@
+.FriendListItemWrapper {
+  max-width: 74px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #1b1b1b;
+  border-radius: 10px;
+}
+
+.FriendListItemImg {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.FriendListItemName {
+  margin-bottom: 5px;
+
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.FriendListItemStatus {
+  font-size: 20;
+}
+
+.statusOnline {
+  color: #0f0;
+}
+
+.statusOffline {
+  color: #f00;
+}
+
+/* .true {
+  font-size: 20;
+  color: #0f0;
+}
+
+.false {
+  font-size: 20;
+  color: #f00;
+} */

@@ -1,0 +1,29 @@
+.transactionTable {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.transactionHead {
+  background-color: #7e847f;
+  color: #fff;
+}
+
+.transactionTable th,
+.transactionTable td {
+  width: 100px;
+  padding: 10px;
+  border: 2px solid #2a2a2a;
+}
+
+.transactionCont tr:nth-child(2n) {
+  background-color: #e8e8e8;
+}
+
+.transactionCont tr:hover {
+  background-color: tomato;
+  color: #fff;
+}
+
+.transactionCont td:not(:first-child) {
+  text-align: center;
+}

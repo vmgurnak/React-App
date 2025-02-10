@@ -1,0 +1,79 @@
+.profileWrapper {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 450px;
+  border: 2px solid #1b1b1b;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background-color: #f6f6f6;
+}
+
+/* ---------------profileUser--------------------- */
+
+.profileUser {
+  padding: 10px 40px 20px 40px;
+}
+
+.profileImg {
+  max-width: 150px;
+  border: 1px solid #1b1b1b;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.profileName {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ProfileTag {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: #7e847f;
+}
+
+.ProfileLocation {
+  text-align: center;
+  font-size: 24px;
+  color: #7e847f;
+}
+
+/* -------------------ProfileList-------------------- */
+
+.ProfileList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  font-size: 20px;
+  text-align: center;
+}
+
+.ProfileItem {
+  flex-basis: calc(100% / 3);
+  padding: 10px;
+  border-top: 2px solid #7e847f;
+}
+
+.ProfileItem:not(:last-child) {
+  border-right: 2px solid #7e847f;
+}
+
+.ProfileItemName,
+.ProfileItemValue {
+  display: block;
+}
+
+.ProfileItemName {
+  margin-bottom: 10px;
+}
+
+.ProfileItemValue {
+  font-weight: 700;
+}
