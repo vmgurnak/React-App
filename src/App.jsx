@@ -74,12 +74,13 @@ const App = () => {
   }, [searchQuery, currentPage, perPage]);
 
   useEffect(() => {
-    // window.scrollBy page scroll
-    window.scrollBy({
-      top: 300,
-      left: 0,
-      behavior: 'smooth',
-    });
+    setTimeout(() => {
+      window.scrollBy({
+        top: currentPage > 1 ? 540 : 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }, 500);
   }, [currentPage]);
 
   // callback function for SearchQuery
@@ -97,19 +98,17 @@ const App = () => {
     setCurrentPage(prevState => prevState + 1);
   };
 
-  // callback function for openModal
   const openModal = () => {
     setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
   };
 
   const modalData = (img, alt) => {
     setModalImg(img);
     setModalAlt(alt);
-  };
-
-  // callback function for closeModal
-  const closeModal = () => {
-    setModalIsOpen(false);
   };
 
   return (
