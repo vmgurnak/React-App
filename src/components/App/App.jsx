@@ -20,10 +20,9 @@ export const App = () => {
   const todos = useSelector(selectTodos);
   const filter = useSelector(selectText);
 
-  const filteredTodos = () =>
-    todos.filter(todo =>
-      todo.text.toLowerCase().includes(filter.toLowerCase())
-    );
+  const filteredTodos = todos.filter(todo =>
+    todo.text.toLowerCase().includes(filter.toLowerCase())
+  );
 
   return (
     <>
